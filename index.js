@@ -10,7 +10,10 @@ server.use(express.json());
 server.use(cors());
 server.use("/api", router);
 
-server.listen(PORT, HOST, () => {
+/*server.listen(PORT, HOST, () => {
   console.log(`Server running at http://${HOST}:${PORT}/`);
-});
+});*/
 
+server.listen(PORT, () => {
+  console.log(`Server running at port:${PORT}/`);
+});
