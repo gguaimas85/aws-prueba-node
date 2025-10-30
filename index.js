@@ -6,7 +6,6 @@ const cors = require("cors");
 const PORT = 3000;
 const HOST = "127.0.0.1";
 
-server.use(express.json());
 server.use(cors());
 server.use("/api", router);
 server.get("/", (req, res) => res.send("Corriendo server"));
